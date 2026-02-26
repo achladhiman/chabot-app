@@ -1,0 +1,67 @@
+/* Styles for the chat container */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Styles for the chat messages */
+.chat-messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+}
+
+.user-message {
+  text-align: right;
+  color: #007bff;
+  margin: 5px 0;
+}
+
+.assistant-message {
+  text-align: left;
+  color: #28a745;
+  margin: 5px 0;
+}
+
+/* Styles for the loading indicator */
+.loading-indicator {
+  text-align: center;
+  color: #6c757d;
+  font-style: italic;
+}
+
+/* Styles for the chat input */
+.chat-input {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.chat-input button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.chat-input button:hover {
+  background-color: #0056b3;
+}

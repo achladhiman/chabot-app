@@ -1,0 +1,17 @@
+<h3 style="text-align: center;">Cricket Chatbot</h3>
+<div class="chat-container">
+  <div class="chat-messages">
+    <div *ngFor="let message of messages" [ngClass]="{'user-message': message.role === 'user', 'assistant-message': message.role === 'assistant'}">
+      {{ message.text }}
+    </div>
+  </div>
+
+  <div class="loading-indicator" *ngIf="isLoading">
+    <p>Loading...</p>
+  </div>
+
+  <div class="chat-input">
+    <input [(ngModel)]="userInput" placeholder="Type your message here..." />
+    <button (click)="sendMessage()">Send</button>
+  </div>
+</div>a
